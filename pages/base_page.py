@@ -22,10 +22,6 @@ class BasePage:
         self.driver.find_element(*locator).click()
 
 
-    def wait_element_visibility_of_element_located(self, locator):
-        WebDriverWait(self.driver, 3).until(expected_conditions.visibility_of_element_located(locator))
-
-
     def get_text(self, locator):
         return WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(locator)).text
 
@@ -50,3 +46,4 @@ class BasePage:
 
     def tab_switch(self):
         self.driver.switch_to.window(self.driver.window_handles[1])
+

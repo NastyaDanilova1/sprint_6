@@ -20,5 +20,7 @@ class OrderPageLocators:
     GREY_COLOR = By.ID, "grey"
     COMMENTS = By.XPATH, "//input[@placeholder='Комментарий для курьера']"
     ORDER_BUTTON = By.XPATH, '//*[contains(@class,"Order_Buttons")]//button[text()="Заказать"]'
+    ORDER_HEADER_BUTTON = By.XPATH, "//div[contains(@class, 'Header_Nav')]/button[text()='Заказать']"
+    ORDER_PAGE_BUTTON = By.XPATH, "//div[contains(@class, 'Home_FinishButton')]/button[text()='Заказать']"
     YES_BUTTON = By.XPATH, "//button[text()='Да']"
     ORDER_SUCCESS_WINDOW = By.XPATH, "//div[contains(@class, 'Order_ModalHeader')]"

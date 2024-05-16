@@ -1,5 +1,4 @@
 from pages.base_page import BasePage
-from locators.home_page_locators import HomePageLocators
 from locators.order_page_locators import OrderPageLocators
 import allure
 
@@ -8,12 +7,12 @@ class OrderPage(BasePage):
 
     @allure.step('Клик на кнопку "Заказать" в шапке главной')
     def click_header_order_btn(self):
-        self.click_to_element(HomePageLocators.ORDER_BUTTON_HEADER)
+        self.click_to_element(OrderPageLocators.ORDER_HEADER_BUTTON)
 
 
     @allure.step('Клик на кнопку "Заказать" в середине главной страницы')
     def click_main_order_btn(self):
-        self.click_to_element(HomePageLocators.ORDER_BUTTON_PAGE)
+        self.click_to_element(OrderPageLocators.ORDER_PAGE_BUTTON)
 
 
     @allure.step('Заполнение поля "Имя"')
